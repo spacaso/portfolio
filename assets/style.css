@@ -1,182 +1,155 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* FONT & BASE */
 body {
-  background-color: #0e0e1a;
+  margin: 0;
   font-family: 'Orbitron', sans-serif;
-  color: #ffffff;
+  background-color: #0b0f1a;
+  color: #f1f1f1;
   line-height: 1.6;
 }
 
-/* Hero Banner */
+a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+}
+
+/* HERO SECTION */
 .hero {
-  background: url('bg-banner.png') center/cover no-repeat;
-  padding: 80px 20px;
+  background: url('../assets/bg-banner.png') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   color: #fff;
 }
 
 .hero h1 {
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  font-size: 4rem;
+  margin: 0;
 }
 
-.hero .tagline {
-  margin-top: 10px;
-  font-size: 1.2rem;
-  color: #aaa;
+.tagline {
+  font-size: 1.5rem;
+  color: #c0c0c0;
 }
 
-/* Section Styling */
+/* SECTION BASE */
 .section {
   padding: 60px 20px;
   max-width: 1000px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #ffd700;
+  font-size: 2.2rem;
   border-bottom: 2px solid #444;
   padding-bottom: 10px;
+  margin-bottom: 30px;
 }
 
-.section p {
-  font-size: 1rem;
-  color: #ddd;
-}
-
-/* Timeline */
-.timeline li {
+/* TIMELINE LIST */
+.timeline {
   list-style: none;
-  margin-bottom: 10px;
-  padding-left: 15px;
-  border-left: 2px solid #ffd700;
-  color: #ccc;
+  padding-left: 0;
 }
 
-/* Skills */
+.timeline li {
+  margin-bottom: 15px;
+}
+
+/* SKILLS GRID */
 .skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
 }
 
 .skill {
-  background-color: #1e1e2f;
-  padding: 10px 15px;
-  border-radius: 6px;
-  border: 1px solid #333;
-  color: #f0f0f0;
+  background: #1d2233;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-weight: 600;
+  border-left: 4px solid #3ef3ff;
 }
 
-/* Projects */
+/* PROJECTS */
 .projects {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 20px;
 }
 
 .project-card {
-  background-color: #181826;
-  border: 1px solid #333;
-  border-radius: 8px;
+  background: #151a28;
   padding: 20px;
-  flex: 1 1 250px;
+  border-radius: 6px;
+  border-left: 4px solid #7ef5f5;
 }
 
-.project-card h3 {
-  color: #ffd700;
-  margin-bottom: 10px;
-}
-
-/* Pricing */
+/* PRICING BOX */
 .pricing-box {
-  background-color: #181826;
-  border: 1px solid #444;
-  border-radius: 8px;
-  padding: 25px;
+  background: #151a28;
+  padding: 30px;
+  border-radius: 6px;
   max-width: 500px;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
-}
-
-.pricing-box h3 {
-  font-size: 1.5rem;
-  color: #ffd700;
-  margin-bottom: 10px;
-}
-
-.pricing-box p {
-  margin-bottom: 20px;
-  color: #ccc;
+  border-left: 4px solid #50e3c2;
 }
 
 .contact-btn {
-  padding: 12px 25px;
-  font-size: 1rem;
-  background-color: #ffd700;
-  color: #000;
+  background: #50e3c2;
   border: none;
-  border-radius: 6px;
+  padding: 12px 20px;
+  font-weight: bold;
   cursor: pointer;
+  margin-top: 15px;
   transition: background 0.3s;
 }
 
 .contact-btn:hover {
-  background-color: #e0c200;
+  background: #3ac9ac;
 }
 
-/* Contact Modal */
+/* MODAL */
 .modal {
   display: none;
   position: fixed;
-  z-index: 999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(10, 10, 20, 0.9);
-  align-items: center;
+  z-index: 9999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.85);
   justify-content: center;
+  align-items: center;
 }
 
 .modal-content {
-  background-color: #1a1a2f;
+  background: #202638;
   padding: 30px;
-  border-radius: 8px;
-  text-align: center;
+  border-radius: 6px;
   max-width: 400px;
-  color: #fff;
-}
-
-.modal-content a {
-  color: #ffd700;
-  text-decoration: none;
-}
-
-.modal-content a:hover {
-  text-decoration: underline;
+  width: 90%;
+  color: #f5f5f5;
 }
 
 .close-btn {
-  float: right;
-  font-size: 1.5rem;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #fff;
+  font-size: 28px;
   cursor: pointer;
-  color: #999;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #0b0b14;
-  color: #777;
-  font-size: 0.9rem;
+  background: #0a0d16;
+  font-size: 14px;
+  border-top: 1px solid #222;
 }
