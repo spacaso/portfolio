@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Spacaso | Minecraft & Discord Dev</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spacaso | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <main>
-    <section class="hero">
-      <img src="assets/images/avatar.png" class="avatar" alt="Spacaso">
-      <h1>Spacaso</h1>
-      <p class="tag">Minecraft & Discord Bot Developer</p>
-      <button class="btn" onclick="showContact()">Via Discord: spacaso</button>
-    </section>
+  <header class="header">
+    <img src="assets/images/avatar.png" alt="Spacaso Avatar" class="avatar"/>
+    <h1>Spacaso</h1>
+    <p class="tag">Minecraft & Discord Bot Developer</p>
+    <p class="pricing">CUSTOM<br><span>DM FOR PRICING</span></p>
+    <button class="btn" onclick="showContact()">Via Discord: spacaso</button>
+  </header>
 
-    <section class="skills">
-      <h2>Skills</h2>
-      <div class="skill-grid">
-        <div>Server Moderation</div>
-        <div>Server Management</div>
-        <div>Minecraft Server Dev</div>
-      </div>
-    </section>
+  <section class="skills">
+    <h2>Skills</h2>
+    <div class="skill-list">
+      <div class="skill"><p>Server Moderation</p></div>
+      <div class="skill"><p>Server Management</p></div>
+      <div class="skill"><p>Minecraft Server Development</p></div>
+    </div>
+  </section>
 
-    <section class="projects">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div><h3>NirvaMC</h3><p>Custom game modes & moderation systems.</p></div>
-        <div><h3>TimberlineMC</h3><p>Discord tools + server automation.</p></div>
-        <div><h3>And many more</h3><p>Ongoing work in MC & Discord bots.</p></div>
-      </div>
-    </section>
-  </main>
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>NirvaMC</h3>
+      <p>Custom Minecraft server development, backend configs, and moderation systems.</p>
+    </div>
+    <div class="project">
+      <h3>TimberlineMC</h3>
+      <p>Managed server performance, plugin integration, and full Discord server setup.</p>
+    </div>
+    <div class="project">
+      <h3>+ Many More</h3>
+      <p>Various other community and client-based Minecraft & Discord development work.</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p id="contact-info" style="display:none;">Contact Spacaso via Discord: <strong>spacaso</strong></p>
+  </section>
 
   <footer>
-    <button onclick="showContact()">Contact</button>
-    <p>Via Discord: <strong>spacaso</strong></p>
-    <img src="assets/icons/discord.svg" alt="Discord" class="discord-icon">
+    <p>© 2025 Spacaso</p>
   </footer>
 
   <script src="script.js"></script>
