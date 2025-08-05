@@ -8,50 +8,49 @@
 </head>
 <body>
   <header class="header">
-    <img src="assets/images/avatar.png" alt="Spacaso Avatar" class="avatar"/>
+    <img src="assets/images/avatar.png" alt="Avatar" class="avatar"/>
     <h1>Spacaso</h1>
-    <p class="tag">Minecraft & Discord Bot Developer</p>
-    <button class="btn" onclick="showContact()">Via Discord: spacaso</button>
+    <p class="tagline">Minecraft Server Development • Discord Bot Development • Server Management</p>
+    <button class="btn" onclick="openContactModal()">Contact</button>
   </header>
 
-  <section class="skills">
-    <h2>Skills</h2>
-    <div class="skill-list">
-      <div class="skill"><p>Server Moderation</p></div>
-      <div class="skill"><p>Server Management</p></div>
-      <div class="skill"><p>Minecraft Server Development</p></div>
-    </div>
-  </section>
+  <main class="main">
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Minecraft Server Development</li>
+        <li>Discord Bot Development</li>
+        <li>Server Moderation & Management</li>
+      </ul>
+    </section>
 
-  <section class="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>NirvaMC</h3>
-      <p>Custom Minecraft server development, backend configs, and moderation systems.</p>
-    </div>
-    <div class="project">
-      <h3>TimberlineMC</h3>
-      <p>Managed server performance, plugin integration, and full Discord server setup.</p>
-    </div>
-    <div class="project">
-      <h3>+ Many More</h3>
-      <p>Various other community and client-based Minecraft & Discord development work.</p>
-    </div>
-  </section>
+    <section class="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>NirvaMC</strong> – Minecraft Server Development</li>
+        <li><strong>TimberlineMC</strong> – Minecraft Network Setup</li>
+        <li>...and many more private projects</li>
+      </ul>
+    </section>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p id="contact-info" style="display:none;">Contact Spacaso via Discord: <strong>spacaso</strong></p>
-  </section>
+    <section class="pricing">
+      <h2>Pricing</h2>
+      <p>For pricing, kindly DM <strong>spacaso</strong> via Discord and share the work details. He will review and decide the price professionally.</p>
+    </section>
+  </main>
 
-  <section class="pricing">
-    <h2>Pricing</h2>
-    <p>For pricing, kindly DM <strong>spacaso</strong> via Discord and share the work details. He will decide the price based on your project. Responses are prompt and professional.</p>
-  </section>
-
-  <footer>
-    <p>© 2025 Spacaso</p>
+  <footer class="footer">
+    <p>&copy; 2025 Spacaso. All rights reserved.</p>
   </footer>
+
+  <!-- Contact Modal -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeContactModal()">&times;</span>
+      <h3>Contact</h3>
+      <p>Via Discord: <strong>spacaso</strong></p>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
