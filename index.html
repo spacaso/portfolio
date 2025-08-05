@@ -4,52 +4,49 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Spacaso | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <img src="assets/images/avatar.png" alt="Avatar" class="avatar"/>
-    <h1>Spacaso</h1>
-    <p class="tagline">Minecraft Server Development • Discord Bot Development • Server Management</p>
-    <button class="btn" onclick="openContactModal()">Contact</button>
-  </header>
+  <div class="container">
+    <header class="header">
+      <img src="assets/images/avatar.png" alt="Avatar" class="avatar">
+      <h1 class="name">Spacaso</h1>
+      <p class="title">Minecraft Server Development • Discord Bot Development • Server Management</p>
+    </header>
 
-  <main class="main">
-    <section class="skills">
+    <section class="section">
+      <h2>About Me</h2>
+      <p>I’m a developer focused on building high-performance Minecraft servers and powerful Discord bots. I specialize in managing, moderating, and maintaining large-scale community servers efficiently.</p>
+    </section>
+
+    <section class="section">
       <h2>Skills</h2>
-      <ul>
+      <ul class="list">
         <li>Minecraft Server Development</li>
         <li>Discord Bot Development</li>
-        <li>Server Moderation & Management</li>
+        <li>Server Management</li>
       </ul>
     </section>
 
-    <section class="projects">
+    <section class="section">
       <h2>Projects</h2>
-      <ul>
-        <li><strong>NirvaMC</strong> – Minecraft Server Development</li>
-        <li><strong>TimberlineMC</strong> – Minecraft Network Setup</li>
-        <li>...and many more private projects</li>
+      <ul class="list">
+        <li><strong>NirvaMC</strong> – Custom Minecraft gameplay, staff moderation tools, and performance tuning.</li>
+        <li><strong>TimberlineMC</strong> – Plugin integrations, economy systems, and server performance optimization.</li>
+        <li>...and many more.</li>
       </ul>
     </section>
 
-    <section class="pricing">
+    <section class="section">
       <h2>Pricing</h2>
-      <p>For pricing, kindly DM <strong>spacaso</strong> via Discord and share the work details. He will review and decide the price professionally.</p>
+      <p>For pricing, kindly DM <strong>spacaso</strong> via Discord and tell him the work. He will decide the price professionally.</p>
     </section>
-  </main>
 
-  <footer class="footer">
-    <p>&copy; 2025 Spacaso. All rights reserved.</p>
-  </footer>
-
-  <!-- Contact Modal -->
-  <div id="contactModal" class="modal">
-    <div class="modal-content">
-      <span class="close-btn" onclick="closeContactModal()">&times;</span>
-      <h3>Contact</h3>
+    <section class="section contact">
+      <h2>Contact</h2>
       <p>Via Discord: <strong>spacaso</strong></p>
-    </div>
+      <button onclick="openContact()">Contact Me</button>
+    </section>
   </div>
 
   <script src="script.js"></script>
