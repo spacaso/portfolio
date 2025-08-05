@@ -1,4 +1,9 @@
-// Basic interaction (optional toggle, click handler)
-document.addEventListener('DOMContentLoaded', () => {
-  console.log("Portfolio loaded.");
+document.addEventListener("DOMContentLoaded", () => {
+  const contactBtn = document.querySelector("#contact-btn");
+
+  if (contactBtn) {
+    contactBtn.addEventListener("click", () => {
+      alert("📨 Contact Spacaso via Discord: spacaso");
+    });
+  }
 });
