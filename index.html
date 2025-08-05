@@ -3,94 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Spacaso | Developer Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Spacaso | Minecraft & Discord Dev</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
   <!-- Header -->
-  <header>
-    <img src="assets/images/logo.png" alt="Logo" class="logo" />
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="hero">
+    <div class="container">
+      <img src="assets/images/avatar.png" alt="Spacaso Avatar" class="avatar"/>
+      <h1>Spacaso</h1>
+      <p class="subtitle">Minecraft Server & Discord Bot Developer</p>
+      <button onclick="openContact()">Contact</button>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Hi, I'm <span class="highlight">Spacaso</span></h1>
-      <p>Professional Minecraft Server & Discord Bot Developer</p>
-      <p>Focused on delivering premium, customized gameplay and bot systems</p>
-      <a href="https://discord.gg/YOURINVITE" class="btn" target="_blank">Via Discord: spacaso</a>
-    </div>
-    <img src="assets/images/avatar.png" alt="Spacaso" class="hero-img" />
-  </section>
-
-  <!-- About -->
-  <section class="section" id="about">
-    <h2>About Me</h2>
-    <p>I build and manage high-performance Minecraft servers and Discord bots for various communities and businesses. With experience in optimization, plugin configuration, custom bots, and automation — I help servers scale and succeed.</p>
-  </section>
-
   <!-- Skills -->
-  <section class="section" id="skills">
+  <section class="skills">
     <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-item">
-        <img src="assets/images/skill1.png" alt="Minecraft" />
-        <p>Minecraft Server Setup</p>
+    <div class="skill-list">
+      <div class="skill-card">
+        <h3>Server Moderation</h3>
       </div>
-      <div class="skill-item">
-        <img src="assets/images/skill2.png" alt="Discord.js" />
-        <p>Discord Bot Development</p>
+      <div class="skill-card">
+        <h3>Server Management</h3>
       </div>
-      <div class="skill-item">
-        <img src="assets/images/skill1.png" alt="Plugins" />
-        <p>Plugin Configurations</p>
-      </div>
-      <div class="skill-item">
-        <img src="assets/images/skill2.png" alt="Scripting" />
-        <p>JavaScript + Node.js</p>
+      <div class="skill-card">
+        <h3>Minecraft Server Development</h3>
       </div>
     </div>
   </section>
 
   <!-- Projects -->
-  <section class="section" id="projects">
+  <section class="projects">
     <h2>Projects</h2>
-    <div class="project-grid">
+    <div class="project-list">
       <div class="project-card">
-        <img src="assets/images/project-nirvamc.png" alt="NirvaMC" />
         <h3>NirvaMC</h3>
-        <p>Custom game modes, permissions, and performance-tuned plugins.</p>
+        <p>Professional Minecraft network with custom features and optimized gameplay.</p>
       </div>
       <div class="project-card">
-        <img src="assets/images/project-timberline.png" alt="TimberlineMC" />
         <h3>TimberlineMC</h3>
-        <p>Discord ticket bots, ranks system, and integrations for a seamless staff workflow.</p>
+        <p>Premium survival server offering unique mechanics, economy, and staff tools.</p>
+      </div>
+      <div class="project-card">
+        <h3>And many more...</h3>
+        <p>Ongoing work with custom Minecraft and Discord bot integrations.</p>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section class="section" id="contact">
-    <h2>Contact Me</h2>
-    <p>Need a developer for your Minecraft server or Discord project?</p>
-    <div class="socials">
-      <a href="https://discord.gg/YOURINVITE" target="_blank">
-        <img src="assets/icons/discord.svg" alt="Discord" />
-        <span>spacaso</span>
-      </a>
-    </div>
+  <section class="contact">
+    <h2>Custom</h2>
+    <p>DM FOR PRICING</p>
+    <button onclick="openContact()">Contact</button>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Spacaso. All rights reserved.</p>
+    <div class="footer-content">
+      <p>Via Discord: <strong>spacaso</strong></p>
+      <img src="assets/icons/discord.svg" alt="Discord" class="discord-icon"/>
+    </div>
   </footer>
 
   <script src="script.js"></script>
