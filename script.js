@@ -1,17 +1,3 @@
-// Open the modal
-function openContactModal() {
-  document.getElementById("contactModal").style.display = "flex";
+function openContact() {
+  alert("Contact Spacaso via Discord: spacaso");
 }
-
-// Close the modal
-function closeContactModal() {
-  document.getElementById("contactModal").style.display = "none";
-}
-
-// Close modal on outside click
-window.onclick = function (event) {
-  const modal = document.getElementById("contactModal");
-  if (event.target === modal) {
-    modal.style.display = "none";
-  }
-};
