@@ -1,50 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spacaso</title>
-  <link rel="stylesheet" href="assets/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/a2e0c5f36c.js" crossorigin="anonymous"></script>
-</head>
-<body>
-
-  <!-- HERO / BANNER -->
-  <section class="hero">
-    <h1 class="glow">Spacaso</h1>
-    <p class="tagline">Exploring code, space, and creativity.</p>
-  </section>
-
-  <!-- PROJECTS SECTION -->
-  <section class="section">
-    <h2>Projects</h2>
-    <div class="project-grid">
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <h2>📁 Projects</h2>
+    <div class="projects">
       <div class="project-card">
         <h3>License Bot</h3>
-        <p>Custom Discord license manager bot using slash commands and Node.js.</p>
+        <p>Advanced Discord bot for product/license management with role-based access, product linking, and slash commands.</p>
+      </div>
+      <div class="project-card">
+        <h3>Verification Bot</h3>
+        <p>Custom verification system with button+modal system for Discord. Includes rate limits, dynamic forms, and role control.</p>
       </div>
       <div class="project-card">
         <h3>Ticket Bot</h3>
-        <p>Advanced ticketing system for Discord with modals, permission logic, and role pings.</p>
+        <p>Space-themed ticket system with modals, slash commands, role claims, close requests, and advanced logging.</p>
       </div>
     </div>
   </section>
 
-  <!-- CONNECT SECTION -->
-  <section class="section">
-    <h2>Connect</h2>
-    <div class="icons">
-      <a href="https://discord.com/users/YOUR_ID" target="_blank" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
-      <a href="https://github.com/YOUR_USERNAME" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+  <!-- PRICING -->
+  <section class="section" id="pricing">
+    <h2>💸 Pricing</h2>
+    <div class="pricing-box">
+      <h3>PRICE: CUSTOM</h3>
+      <p>You decide the value. Rates vary based on complexity, delivery speed, and project scope.</p>
+      <button onclick="openContactModal()" class="contact-btn">📬 Contact for Pricing</button>
     </div>
   </section>
 
+  <!-- CONTACT MODAL -->
+  <div id="contact-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeContactModal()">&times;</span>
+      <h2>Contact Spacaso</h2>
+      <p><strong>Discord:</strong> Spacaso#0001</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/spacaso" target="_blank">@spacaso</a></p>
+    </div>
+  </div>
+
   <!-- FOOTER -->
   <footer>
-    <p>© 2025 Spacaso. Made with stardust and code.</p>
+    <p>© 2025 Spacaso — All rights reserved.</p>
   </footer>
 
   <script src="scripts/main.js"></script>
