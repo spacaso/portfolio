@@ -1,3 +1,3 @@
-function showContact(){
-  alert("Contact via Discord: spacaso");
+function showContact() {
+  document.getElementById('contact-info').style.display = 'block';
 }
