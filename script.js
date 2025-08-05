@@ -1,3 +1,4 @@
-function openContact() {
-  alert("Contact Spacaso via Discord: spacaso");
+function showContact() {
+  const box = document.getElementById('contactBox');
+  box.style.display = box.style.display === 'block' ? 'none' : 'block';
 }
