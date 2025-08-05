@@ -1,71 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Spacaso | Minecraft & Discord Dev</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Header -->
-  <header class="hero">
-    <div class="container">
-      <img src="assets/images/avatar.png" alt="Spacaso Avatar" class="avatar"/>
+  <main>
+    <section class="hero">
+      <img src="assets/images/avatar.png" class="avatar" alt="Spacaso">
       <h1>Spacaso</h1>
-      <p class="subtitle">Minecraft Server & Discord Bot Developer</p>
-      <button onclick="openContact()">Contact</button>
-    </div>
-  </header>
+      <p class="tag">Minecraft & Discord Bot Developer</p>
+      <button class="btn" onclick="showContact()">Via Discord: spacaso</button>
+    </section>
 
-  <!-- Skills -->
-  <section class="skills">
-    <h2>Skills</h2>
-    <div class="skill-list">
-      <div class="skill-card">
-        <h3>Server Moderation</h3>
+    <section class="skills">
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <div>Server Moderation</div>
+        <div>Server Management</div>
+        <div>Minecraft Server Dev</div>
       </div>
-      <div class="skill-card">
-        <h3>Server Management</h3>
-      </div>
-      <div class="skill-card">
-        <h3>Minecraft Server Development</h3>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects -->
-  <section class="projects">
-    <h2>Projects</h2>
-    <div class="project-list">
-      <div class="project-card">
-        <h3>NirvaMC</h3>
-        <p>Professional Minecraft network with custom features and optimized gameplay.</p>
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div><h3>NirvaMC</h3><p>Custom game modes & moderation systems.</p></div>
+        <div><h3>TimberlineMC</h3><p>Discord tools + server automation.</p></div>
+        <div><h3>And many more</h3><p>Ongoing work in MC & Discord bots.</p></div>
       </div>
-      <div class="project-card">
-        <h3>TimberlineMC</h3>
-        <p>Premium survival server offering unique mechanics, economy, and staff tools.</p>
-      </div>
-      <div class="project-card">
-        <h3>And many more...</h3>
-        <p>Ongoing work with custom Minecraft and Discord bot integrations.</p>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- Contact -->
-  <section class="contact">
-    <h2>Custom</h2>
-    <p>DM FOR PRICING</p>
-    <button onclick="openContact()">Contact</button>
-  </section>
-
-  <!-- Footer -->
   <footer>
-    <div class="footer-content">
-      <p>Via Discord: <strong>spacaso</strong></p>
-      <img src="assets/icons/discord.svg" alt="Discord" class="discord-icon"/>
-    </div>
+    <button onclick="showContact()">Contact</button>
+    <p>Via Discord: <strong>spacaso</strong></p>
+    <img src="assets/icons/discord.svg" alt="Discord" class="discord-icon">
   </footer>
 
   <script src="script.js"></script>
