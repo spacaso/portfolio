@@ -3,274 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Spacaso Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #111;
-      color: #fff;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 10%;
-      background-color: #1a1a1a;
-    }
-    header h1 {
-      font-size: 24px;
-    }
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #aaa;
-      font-weight: 500;
-    }
-    nav a:hover {
-      color: #fff;
-    }
-    .hero {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 60px 10%;
-      background: radial-gradient(#1f1f1f, #111);
-    }
-    .hero-text {
-      max-width: 50%;
-    }
-    .hero-text h2 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-    .hero-text p {
-      margin-bottom: 20px;
-      color: #ccc;
-    }
-    .hero img {
-      border-radius: 20px;
-      width: 220px;
-    }
-    .btn {
-      background-color: #00bcd4;
-      border: none;
-      padding: 10px 20px;
-      color: #000;
-      font-weight: bold;
-      cursor: pointer;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-    .stats {
-      display: flex;
-      gap: 40px;
-      margin-top: 30px;
-    }
-    .stat {
-      text-align: center;
-    }
-    .section {
-      padding: 60px 10%;
-      background-color: #1a1a1a;
-      margin-top: 30px;
-    }
-    .about {
-      display: flex;
-      align-items: center;
-      gap: 40px;
-    }
-    .about img {
-      border-radius: 20px;
-      width: 180px;
-    }
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-    }
-    .skill {
-      background-color: #2a2a2a;
-      padding: 10px;
-      border-radius: 10px;
-    }
-    .skill-bar {
-      height: 6px;
-      background-color: #00bcd4;
-      border-radius: 3px;
-      width: 80%;
-      margin-top: 6px;
-    }
-    .projects, .pricing {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .project, .price-card {
-      background-color: #2a2a2a;
-      padding: 20px;
-      border-radius: 10px;
-      width: 220px;
-      text-align: center;
-    }
-    .project img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    .footer {
-      background-color: #1a1a1a;
-      padding: 40px 10%;
-      text-align: center;
-    }
-    .footer a {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 20px;
-      background-color: #333;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 6px;
-    }
-    .footer p {
-      color: #888;
-      font-size: 14px;
-    }
-    @media (max-width: 768px) {
-      .hero, .about {
-        flex-direction: column;
-        text-align: center;
-      }
-      .hero-text, .about-text {
-        max-width: 100%;
-      }
-      .skills {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <title>Spacaso | Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- Header -->
   <header>
-    <h1>Spacaso</h1>
+    <img src="assets/images/logo.png" alt="Logo" class="logo" />
     <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Skills</a>
-      <a href="#">Pricing</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero">
     <div class="hero-text">
-      <p>PERSONAL WEBSITE</p>
-      <h2>Hi there, my name is Spacaso</h2>
-      <p>I make cool stuff — bots, websites, and more.</p>
-      <a href="#" class="btn">Via Discord: spacaso</a>
-      <div class="stats">
-        <div class="stat"><strong>50+</strong><br>Clients</div>
-        <div class="stat"><strong>5-Star</strong><br>Rating</div>
-        <div class="stat"><strong>10</strong><br>Products</div>
-      </div>
+      <h1>Hi, I'm <span class="highlight">Spacaso</span></h1>
+      <p>Professional Minecraft Server & Discord Bot Developer</p>
+      <p>Focused on delivering premium, customized gameplay and bot systems</p>
+      <a href="https://discord.gg/YOURINVITE" class="btn" target="_blank">Via Discord: spacaso</a>
     </div>
-    <img src="your-avatar.png" alt="Spacaso Avatar">
+    <img src="assets/images/avatar.png" alt="Spacaso" class="hero-img" />
   </section>
 
-  <section class="section about">
-    <img src="your-aboutme.png" alt="About Image">
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>I'm Spacaso. I build things for Discord and the web, and I do it with quality and speed. Want to work together?</p>
-      <a class="btn" href="#">Contact Me</a>
-    </div>
+  <!-- About -->
+  <section class="section" id="about">
+    <h2>About Me</h2>
+    <p>I build and manage high-performance Minecraft servers and Discord bots for various communities and businesses. With experience in optimization, plugin configuration, custom bots, and automation — I help servers scale and succeed.</p>
   </section>
 
-  <section class="section">
+  <!-- Skills -->
+  <section class="section" id="skills">
     <h2>Skills</h2>
-    <div class="skills">
-      <div class="skill">
-        <p>Discord Bots</p>
-        <div class="skill-bar" style="width: 90%;"></div>
+    <div class="skills-grid">
+      <div class="skill-item">
+        <img src="assets/images/skill1.png" alt="Minecraft" />
+        <p>Minecraft Server Setup</p>
       </div>
-      <div class="skill">
-        <p>Node.js</p>
-        <div class="skill-bar" style="width: 80%;"></div>
+      <div class="skill-item">
+        <img src="assets/images/skill2.png" alt="Discord.js" />
+        <p>Discord Bot Development</p>
       </div>
-      <div class="skill">
-        <p>Web Design</p>
-        <div class="skill-bar" style="width: 70%;"></div>
+      <div class="skill-item">
+        <img src="assets/images/skill1.png" alt="Plugins" />
+        <p>Plugin Configurations</p>
       </div>
-      <div class="skill">
-        <p>Hosting & Deployment</p>
-        <div class="skill-bar" style="width: 85%;"></div>
+      <div class="skill-item">
+        <img src="assets/images/skill2.png" alt="Scripting" />
+        <p>JavaScript + Node.js</p>
       </div>
     </div>
   </section>
 
-  <section class="section">
+  <!-- Projects -->
+  <section class="section" id="projects">
     <h2>Projects</h2>
-    <div class="projects">
-      <div class="project">
-        <img src="https://via.placeholder.com/200x120?text=Project+1">
-        <p>Discord Verification Bot</p>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="assets/images/project-nirvamc.png" alt="NirvaMC" />
+        <h3>NirvaMC</h3>
+        <p>Custom game modes, permissions, and performance-tuned plugins.</p>
       </div>
-      <div class="project">
-        <img src="https://via.placeholder.com/200x120?text=Project+2">
-        <p>Custom Hosting Panel</p>
-      </div>
-      <div class="project">
-        <img src="https://via.placeholder.com/200x120?text=Project+3">
-        <p>Product License System</p>
+      <div class="project-card">
+        <img src="assets/images/project-timberline.png" alt="TimberlineMC" />
+        <h3>TimberlineMC</h3>
+        <p>Discord ticket bots, ranks system, and integrations for a seamless staff workflow.</p>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <h2>Pricing</h2>
-    <div class="pricing">
-      <div class="price-card">
-        <h3>Web Design</h3>
-        <p style="font-size: 24px;">$19.99</p>
-        <p>One-time</p>
-        <ul>
-          <li>Modern Design</li>
-          <li>Responsive</li>
-          <li>Fast Delivery</li>
-        </ul>
-        <a class="btn" href="#">Contact</a>
-      </div>
-      <div class="price-card">
-        <h3>Bot Setup</h3>
-        <p style="font-size: 24px;">$9.99</p>
-        <p>One-time</p>
-        <ul>
-          <li>Full Setup</li>
-          <li>Hosting Support</li>
-          <li>Secure System</li>
-        </ul>
-        <a class="btn" href="#">Contact</a>
-      </div>
-      <div class="price-card">
-        <h3>Design</h3>
-        <p style="font-size: 24px;">$4.99</p>
-        <p>One-time</p>
-        <ul>
-          <li>Logo + Banner</li>
-          <li>Simple UI</li>
-          <li>Custom Design</li>
-        </ul>
-        <a class="btn" href="#">Contact</a>
-      </div>
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <h2>Contact Me</h2>
+    <p>Need a developer for your Minecraft server or Discord project?</p>
+    <div class="socials">
+      <a href="https://discord.gg/YOURINVITE" target="_blank">
+        <img src="assets/icons/discord.svg" alt="Discord" />
+        <span>spacaso</span>
+      </a>
     </div>
   </section>
 
-  <div class="footer">
-    <h2>Reach Me Out</h2>
-    <a href="#">Discord</a>
-    <a href="#">Email</a>
-    <p>© 2025 Spacaso. All Rights Reserved.</p>
-  </div>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Spacaso. All rights reserved.</p>
+  </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
