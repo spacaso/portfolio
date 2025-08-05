@@ -1,17 +1,16 @@
-// Scroll reveal animation using Intersection Observer
-document.addEventListener("DOMContentLoaded", () => {
-  const revealElements = document.querySelectorAll(".section, .project-card");
+function openContactModal() {
+  document.getElementById("contact-modal").style.display = "flex";
+}
 
-  const observer = new IntersectionObserver((entries, observerInstance) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("reveal-visible");
-        observerInstance.unobserve(entry.target); // Animate once
-      }
-    });
-  }, {
-    threshold: 0.1
-  });
+function closeContactModal() {
+  document.getElementById("contact-modal").style.display = "none";
+}
 
-  revealElements.forEach(el => observer.observe(el));
-});
+// Optional: close modal when clicking outside the box
+window.onclick = function (event) {
+  const modal = document.getElementById("contact-modal");
+  if (event.target === modal) {
+    closeContactModal();
+  }
+};
+
