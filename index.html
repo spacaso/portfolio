@@ -3,50 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Spacaso | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Spacaso | Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <div class="container">
-    <header class="header">
-      <img src="assets/images/avatar.png" alt="Avatar" class="avatar">
-      <h1 class="name">Spacaso</h1>
-      <p class="title">Minecraft Server Development • Discord Bot Development • Server Management</p>
-    </header>
+    <div class="header">
+      <img src="assets/images/avatar.png" alt="Avatar" class="avatar" />
+      <h1>Spacaso</h1>
+      <p>Minecraft Server Development & Discord Bot Development</p>
+    </div>
 
-    <section class="section">
-      <h2>About Me</h2>
-      <p>I’m a developer focused on building high-performance Minecraft servers and powerful Discord bots. I specialize in managing, moderating, and maintaining large-scale community servers efficiently.</p>
-    </section>
-
-    <section class="section">
+    <div class="section">
       <h2>Skills</h2>
-      <ul class="list">
-        <li>Minecraft Server Development</li>
-        <li>Discord Bot Development</li>
-        <li>Server Management</li>
+      <ul>
+        <li>Minecraft Server Development (Java Edition)</li>
+        <li>Discord Bot Development (Node.js & Python)</li>
+        <li>Server Management & Moderation</li>
       </ul>
-    </section>
+    </div>
 
-    <section class="section">
+    <div class="section">
       <h2>Projects</h2>
-      <ul class="list">
-        <li><strong>NirvaMC</strong> – Custom Minecraft gameplay, staff moderation tools, and performance tuning.</li>
-        <li><strong>TimberlineMC</strong> – Plugin integrations, economy systems, and server performance optimization.</li>
-        <li>...and many more.</li>
+      <ul>
+        <li>NirvaMC – Feature-rich Minecraft server development</li>
+        <li>TimberlineMC – Custom plugins & gameplay design</li>
+        <li>Various advanced Discord bots for store & support</li>
       </ul>
-    </section>
+    </div>
 
-    <section class="section">
+    <div class="section">
       <h2>Pricing</h2>
-      <p>For pricing, kindly DM <strong>spacaso</strong> via Discord and tell him the work. He will decide the price professionally.</p>
-    </section>
+      <p>
+        For pricing, kindly DM <strong>spacaso</strong> via Discord and share the work details.<br/>
+        He will professionally review your request and provide a fair quote.
+      </p>
+    </div>
 
-    <section class="section contact">
+    <div class="section">
       <h2>Contact</h2>
-      <p>Via Discord: <strong>spacaso</strong></p>
-      <button onclick="openContact()">Contact Me</button>
-    </section>
+      <button class="contact-button" onclick="showContact()">Contact Spacaso</button>
+      <div id="contactBox">
+        <p><img src="assets/icons/discord.svg" width="20" style="vertical-align: middle;"/> Via Discord: <strong>spacaso</strong></p>
+      </div>
+    </div>
   </div>
 
   <script src="script.js"></script>
