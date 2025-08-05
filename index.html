@@ -1,45 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spacaso | Portfolio</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Spacaso</h1>
+    <p class="tagline">Crafting Next-Gen Digital Infrastructure</p>
+  </div>
+
+  <!-- INTRO -->
+  <section class="section">
+    <h2>Introduction</h2>
+    <p>I’m Spacaso — a Minecraft and Discord-focused developer known for futuristic digital builds and real-time interactive tools. I specialize in server-side infrastructure, automation bots, and immersive backend management.</p>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section">
+    <h2>Experience</h2>
+    <ul class="timeline">
+      <li><strong>2021 – Present:</strong> Custom Discord Bot Developer</li>
+      <li><strong>2020 – Present:</strong> Minecraft Server Manager & Developer</li>
+      <li><strong>2019 – 2022:</strong> Community Moderator for multiple gaming networks</li>
+    </ul>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">Server Moderation</div>
+      <div class="skill">Server Management</div>
+      <div class="skill">Discord Bot Development</div>
+      <div class="skill">Minecraft Server Development</div>
+    </div>
+  </section>
+
   <!-- PROJECTS -->
-  <section class="section" id="projects">
-    <h2>📁 Projects</h2>
+  <section class="section">
+    <h2>Projects</h2>
     <div class="projects">
       <div class="project-card">
-        <h3>License Bot</h3>
-        <p>Advanced Discord bot for product/license management with role-based access, product linking, and slash commands.</p>
-      </div>
-      <div class="project-card">
         <h3>Verification Bot</h3>
-        <p>Custom verification system with button+modal system for Discord. Includes rate limits, dynamic forms, and role control.</p>
+        <p>Used in Discord servers to verify members with form inputs and restricted access.</p>
       </div>
       <div class="project-card">
-        <h3>Ticket Bot</h3>
-        <p>Space-themed ticket system with modals, slash commands, role claims, close requests, and advanced logging.</p>
+        <h3>Ticket System</h3>
+        <p>Complete support ticket system with dropdown category selection, modals, and claim features.</p>
+      </div>
+      <div class="project-card">
+        <h3>License Bot</h3>
+        <p>Product/license-based bot that handles premium access with commands like `/license create`, `/product update`, etc.</p>
       </div>
     </div>
   </section>
 
   <!-- PRICING -->
-  <section class="section" id="pricing">
-    <h2>💸 Pricing</h2>
+  <section class="section">
+    <h2>Pricing</h2>
     <div class="pricing-box">
       <h3>PRICE: CUSTOM</h3>
-      <p>You decide the value. Rates vary based on complexity, delivery speed, and project scope.</p>
-      <button onclick="openContactModal()" class="contact-btn">📬 Contact for Pricing</button>
+      <p>You define your project’s scale and complexity, and I’ll provide a quote that fits.</p>
+      <button class="contact-btn" onclick="openContactModal()">Contact for Pricing</button>
     </div>
   </section>
 
   <!-- CONTACT MODAL -->
-  <div id="contact-modal" class="modal">
+  <div class="modal" id="contact-modal">
     <div class="modal-content">
       <span class="close-btn" onclick="closeContactModal()">&times;</span>
-      <h2>Contact Spacaso</h2>
-      <p><strong>Discord:</strong> Spacaso#0001</p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/spacaso" target="_blank">@spacaso</a></p>
+      <h3>Contact Spacaso</h3>
+      <p>For quotes or collaborations, reach out via:</p>
+      <p><strong>Discord:</strong> spacaso</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/spacaso" target="_blank">github.com/spacaso</a></p>
     </div>
   </div>
 
-  <!-- FOOTER -->
   <footer>
-    <p>© 2025 Spacaso — All rights reserved.</p>
+    <p>© 2025 Spacaso. All rights reserved.</p>
   </footer>
 
   <script src="scripts/main.js"></script>
