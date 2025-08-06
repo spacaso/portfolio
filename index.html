@@ -72,17 +72,19 @@
     <div class="pricing-box">
       <h3>PRICE: CUSTOM</h3>
       <p>You define your project’s scale and complexity, and I’ll provide a quote that fits.</p>
-      <a href="#contact" class="contact-btn">Contact Me</a>
+      <button class="contact-btn" onclick="openContactModal()">Contact</button>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section class="section" id="contact">
-    <h2>Contact</h2>
-    <p>Contact Spacaso via any of the following platforms:</p>
-    <p>Discord: <strong>spacaso</strong></p>
-    <p>GitHub: <a href="https://github.com/spacaso" target="_blank">https://github.com/spacaso</a></p>
-  </section>
+  <!-- CONTACT MODAL -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeContactModal()">&times;</span>
+      <h3>Contact Spacaso</h3>
+      <p>Discord: <strong>spacaso</strong></p>
+      <p>GitHub: <a href="https://github.com/spacaso" target="_blank">github.com/spacaso</a></p>
+    </div>
+  </div>
 
   <footer>
     <p>© 2025 Spacaso. All rights reserved.</p>
