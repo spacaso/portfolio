@@ -1,14 +1,18 @@
-function openContact() {
-  document.getElementById("contactModal").style.display = "block";
-}
+// Lightbox functionality
+document.addEventListener("DOMContentLoaded", () => {
+  const galleryImages = document.querySelectorAll(".gallery img");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
 
-function closeContact() {
-  document.getElementById("contactModal").style.display = "none";
-}
+  galleryImages.forEach(img => {
+    img.addEventListener("click", () => {
+      lightboxImg.src = img.src;
+      lightbox.style.display = "flex";
+    });
+  });
 
-window.onclick = function (event) {
-  const modal = document.getElementById("contactModal");
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
+  lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+  });
+});
+
