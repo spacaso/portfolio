@@ -3,39 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Spacaso | Images</title>
+  <title>Spacaso | Gallery</title>
   <link rel="stylesheet" href="assets/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="nav-bar">
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="images.html" class="nav-link active">Images</a>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <button onclick="location.href='index.html'">Home</button>
+    <button onclick="location.href='images.html'">Images</button>
   </nav>
 
-  <!-- Hero -->
-  <div class="hero small-hero">
-    <h1>My Work Gallery</h1>
-    <p class="tagline">Images from my Minecraft & Discord projects</p>
+  <!-- HERO (SAME AS INDEX) -->
+  <div class="hero">
+    <h1>Gallery</h1>
+    <p class="tagline">Preview of My Work</p>
   </div>
 
-  <!-- Gallery Section -->
+  <!-- GALLERY SECTION -->
   <section class="section">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <!-- Replace filenames with your actual image filenames in images-gallery/ -->
-      <img src="images-gallery/1.png" alt="Image 1" />
-      <img src="images-gallery/2.png" alt="Image 2" />
-      <img src="images-gallery/3.png" alt="Image 3" />
-      <img src="images-gallery/4.png" alt="Image 4" />
-      <!-- Add more <img> tags as needed -->
+    <h2>Image Gallery</h2>
+    <div class="gallery" id="image-gallery">
+      <!-- JS will auto-populate images from images-gallery/ -->
     </div>
   </section>
 
   <footer>
     <p>© 2025 Spacaso. All rights reserved.</p>
   </footer>
+
+  <script src="scripts/images.js"></script>
 </body>
 </html>
