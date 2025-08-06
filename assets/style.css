@@ -1,4 +1,3 @@
-/* General Reset */
 body {
   margin: 0;
   font-family: 'Orbitron', sans-serif;
@@ -7,163 +6,111 @@ body {
   color: #fff;
 }
 
-h1, h2, h3 {
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+  font-size: 48px;
   color: #f7e600;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+.tagline {
+  font-size: 18px;
+  color: #ccc;
 }
 
-/* Hero */
-.hero {
-  text-align: center;
-  padding: 60px 20px 30px;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-/* Navigation */
 .nav-bar {
+  background: #111;
+  padding: 10px 0;
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  padding: 15px;
-  background-color: #111;
+  gap: 20px;
 }
 
 .nav-btn {
-  padding: 8px 18px;
-  border: 1px solid #f7e600;
-  background-color: transparent;
-  color: #f7e600;
-  border-radius: 4px;
+  text-decoration: none;
+  color: #ccc;
+  padding: 10px 20px;
   transition: 0.3s;
 }
 
+.nav-btn.active,
 .nav-btn:hover {
-  background-color: #f7e600;
+  background: #f7e600;
   color: #000;
 }
 
-.nav-btn.active {
-  background-color: #f7e600;
-  color: #000;
-}
-
-/* Sections */
 .section {
   padding: 40px 20px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   margin: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
-.section:hover {
-  transform: scale(1.01);
-  transition: transform 0.2s ease;
-}
-
-/* Skills */
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.skill {
-  background-color: #222;
-  border: 1px solid #f7e600;
-  padding: 8px 12px;
-  border-radius: 4px;
-}
-
-/* Projects */
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.project-card {
-  background-color: #222;
-  border: 1px solid #f7e600;
-  padding: 15px;
-  border-radius: 6px;
-  width: 100%;
-  max-width: 300px;
-}
-
-/* Pricing */
-.pricing-box {
-  border: 1px solid #f7e600;
-  padding: 20px;
-  background-color: #111;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.contact-btn {
-  margin-top: 10px;
-  padding: 8px 18px;
-  background-color: #f7e600;
-  border: none;
-  color: #000;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #111;
+.section h2 {
   color: #f7e600;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-/* Modal */
-.modal {
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery img {
+  width: 220px;
+  border-radius: 8px;
+  border: 2px solid #f7e600;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Lightbox */
+.lightbox {
   display: none;
   position: fixed;
-  z-index: 999;
+  z-index: 1000;
+  padding-top: 60px;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.9);
 }
 
-.modal-content {
-  background-color: #1e1e1e;
-  margin: 10% auto;
-  padding: 2rem;
+.lightbox-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+  border: 3px solid #f7e600;
   border-radius: 8px;
-  width: 80%;
-  max-width: 400px;
-  color: white;
-  text-align: center;
-  border: 2px solid #f7e600;
 }
 
-.modal-content h3 {
-  margin-bottom: 1rem;
+.close-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 35px;
   color: #f7e600;
-}
-
-.modal-content a {
-  color: #f7e600;
-  text-decoration: none;
-}
-
-.modal-content a:hover {
-  text-decoration: underline;
-}
-
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
+  font-size: 40px;
+  font-weight: bold;
   cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #f7e600;
 }
