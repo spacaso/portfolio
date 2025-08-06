@@ -1,17 +1,20 @@
-function openModal() {
-  document.getElementById('contactModal').style.display = 'block';
+function toggleContact() {
+  const panel = document.getElementById("contactPanel");
+  panel.classList.toggle("open");
 }
 
-function closeModal() {
-  document.getElementById('contactModal').style.display = 'none';
+function openImage(img) {
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImage");
+  modal.style.display = "block";
+  modalImg.src = img.src;
 }
 
-window.onclick = function(event) {
-  const modal = document.getElementById('contactModal');
-  if (event.target == modal) {
-    modal.style.display = 'none';
-  }
-};
+function closeImage() {
+  document.getElementById("imageModal").style.display = "none";
+}
+
+
 
 
 
