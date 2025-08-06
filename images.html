@@ -10,6 +10,7 @@
 <body>
   <!-- HERO BANNER -->
   <div class="hero">
+    <img src="assets/bg-banner.png" alt="Banner" class="banner" />
     <h1>My Work</h1>
     <p class="tagline">Gallery of Minecraft & Discord Creations</p>
   </div>
@@ -21,20 +22,20 @@
   </nav>
 
   <!-- IMAGE GALLERY -->
-  <section class="section">
+  <section class="section gallery-section">
     <h2>Gallery</h2>
-    <div class="gallery">
-      <!-- Add more images as needed -->
-      <img src="images-gallery/image1.png" alt="Project 1">
-      <img src="images-gallery/image2.jpg" alt="Project 2">
-      <img src="images-gallery/image3.png" alt="Project 3">
-    </div>
+    <div class="gallery" id="image-gallery"></div>
   </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <img id="lightbox-img" />
+  </div>
 
   <footer>
     <p>© 2025 Spacaso. All rights reserved.</p>
   </footer>
 
-  <script src="scripts/main.js"></script>
+  <script src="scripts/images.js"></script>
 </body>
 </html>
