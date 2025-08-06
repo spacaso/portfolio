@@ -1,7 +1,7 @@
 function openContactModal() {
-  document.getElementById('contact-modal').style.display = 'flex';
+  document.getElementById("contact-modal").style.display = "flex";
 }
 
 function closeContactModal() {
-  document.getElementById('contact-modal').style.display = 'none';
+  document.getElementById("contact-modal").style.display = "none";
 }
