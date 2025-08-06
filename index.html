@@ -72,7 +72,7 @@
     <div class="pricing-box">
       <h3>PRICE: CUSTOM</h3>
       <p>You define your project’s scale and complexity, and I’ll provide a quote that fits.</p>
-      <button class="contact-btn">Contact</button>
+      <button class="contact-btn" onclick="showContact()">Contact</button>
     </div>
   </section>
 
@@ -80,7 +80,32 @@
     <p>© 2025 Spacaso. All rights reserved.</p>
   </footer>
 
-  <script src="scripts/main.js"></script>
+  <!-- Contact Modal -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3>Contact Spacaso</h3>
+      <p>Discord: spacaso</p>
+      <p>GitHub: <a href="https://github.com/spacaso" target="_blank">github.com/spacaso</a></p>
+    </div>
+  </div>
+
+  <script>
+    const modal = document.getElementById("contactModal");
+
+    function showContact() {
+      modal.style.display = "block";
+    }
+
+    function closeModal() {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
 </body>
 </html>
-
