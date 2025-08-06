@@ -1,72 +1,70 @@
-/* General Styles */
+/* GENERAL STYLES */
 body {
   margin: 0;
-  padding: 0;
   font-family: 'Orbitron', sans-serif;
-  background-color: #0d0d0d;
-  color: #fff;
-  line-height: 1.6;
+  background-color: #000;
+  color: #FFD700;
+  background-image: url('images/bg-banner.png'); /* Adjust path if needed */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-/* Hero Banner */
+/* HERO */
 .hero {
-  background-color: #1a1a1a;
   text-align: center;
   padding: 80px 20px 40px;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 3em;
   margin: 0;
-  color: yellow;
 }
 
 .tagline {
-  font-size: 1.2rem;
-  color: #ccc;
+  font-size: 1.2em;
+  color: #fff8c6;
 }
 
-/* Navigation */
+/* NAVIGATION */
 .nav-bar {
   display: flex;
   justify-content: center;
-  background-color: #121212;
-  padding: 12px 0;
+  background-color: #111;
+  padding: 10px 0;
 }
 
 .nav-btn {
-  color: #fff;
+  color: #FFD700;
   text-decoration: none;
-  margin: 0 15px;
-  font-weight: 600;
-  position: relative;
-  padding-bottom: 4px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
 }
 
 .nav-btn:hover,
 .nav-btn.active {
-  color: yellow;
-  border-bottom: 2px solid yellow;
+  background-color: #333;
 }
 
-/* Section Layout */
+/* SECTIONS */
 .section {
   padding: 60px 20px;
-  max-width: 1000px;
+  max-width: 900px;
   margin: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  margin-bottom: 40px;
 }
 
 .section h2 {
-  font-size: 2rem;
+  text-align: center;
   margin-bottom: 20px;
+  font-size: 2em;
+  color: #FFD700;
 }
 
-/* Yellow header override */
-.yellow-heading {
-  color: yellow;
-}
-
-/* Timeline */
+/* EXPERIENCE TIMELINE */
 .timeline {
   list-style-type: none;
   padding-left: 0;
@@ -76,66 +74,72 @@ body {
   margin-bottom: 10px;
 }
 
-/* Skills */
+/* SKILLS */
 .skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 10px;
+  justify-content: center;
 }
 
 .skill {
+  padding: 10px 20px;
   background-color: #222;
-  padding: 10px 15px;
+  border: 1px solid #FFD700;
   border-radius: 8px;
-  font-weight: 600;
-  border: 1px solid #444;
+  cursor: default;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* Projects */
+.skill:hover {
+  transform: scale(1.05);
+  background-color: #2a2a2a;
+}
+
+/* PROJECTS */
 .projects {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
 .project-card {
-  background-color: #1e1e1e;
-  border: 1px solid #333;
-  padding: 20px;
-  border-radius: 8px;
-  flex: 1 1 280px;
-}
-
-.project-card h3 {
-  color: yellow;
-  margin-top: 0;
-}
-
-/* Pricing */
-.pricing-box {
-  background-color: #1e1e1e;
-  border: 1px solid #333;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.pricing-box h3 {
-  color: yellow;
-}
-
-/* Footer */
-footer {
   background-color: #111;
   padding: 20px;
-  margin-top: 40px;
+  border: 1px solid #FFD700;
+  border-radius: 10px;
+  width: 250px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-footer p {
-  color: #888;
-  font-size: 0.9rem;
+.project-card:hover {
+  transform: scale(1.05);
+  background-color: #2a2a2a;
 }
 
-.centered-footer {
+/* PRICING */
+.pricing-box {
+  background-color: #111;
+  padding: 30px;
+  border: 1px solid #FFD700;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: auto;
   text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.pricing-box:hover {
+  transform: scale(1.05);
+  background-color: #2a2a2a;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px 10px;
+  background-color: #111;
+  color: #FFD700;
+  font-size: 0.9em;
 }
