@@ -5,61 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Spacaso | Portfolio</title>
   <link rel="stylesheet" href="assets/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- NAVIGATION -->
+  <!-- NAV -->
   <nav class="navbar">
-    <button onclick="location.href='index.html'">Home</button>
-    <button onclick="location.href='images.html'">Images</button>
+    <a href="index.html" class="nav-btn">Home</a>
+    <a href="images.html" class="nav-btn">My Work</a>
   </nav>
 
-  <!-- HERO BANNER -->
+  <!-- HERO -->
   <div class="hero">
+    <img src="assets/bg-banner.png" alt="Banner" class="banner" />
     <h1>Spacaso</h1>
     <p class="tagline">Minecraft & Discord Bot Developer</p>
   </div>
 
-  <!-- INTRODUCTION -->
+  <!-- INTRO -->
   <section class="section">
     <h2>Introduction</h2>
-    <p>
-      I'm Spacaso, a Minecraft and Discord developer who specializes in custom plugins, bots, server setups, and automation. 
-      I deliver optimized solutions that blend creativity with performance.
-    </p>
+    <p>I’m Spacaso — a Minecraft and Discord-focused developer known for futuristic digital builds and real-time interactive tools. I specialize in server-side infrastructure, automation bots, and immersive backend management.</p>
   </section>
 
   <!-- EXPERIENCE -->
   <section class="section">
     <h2>Experience</h2>
-    <ul>
-      <li>3+ years managing Minecraft communities and server configurations.</li>
-      <li>Experienced with custom Discord bots using Discord.js & Python.</li>
-      <li>Successfully delivered over 50 private commissions.</li>
+    <ul class="timeline">
+      <li><strong>2025 – Present:</strong> Custom Discord Bot Developer</li>
+      <li><strong>2021 – Present:</strong> Minecraft Server Manager & Developer</li>
+      <li><strong>2021 – 2022:</strong> Community Moderator for multiple gaming networks</li>
     </ul>
   </section>
 
   <!-- SKILLS -->
   <section class="section">
     <h2>Skills</h2>
-    <ul>
-      <li>Server Moderation</li>
-      <li>Server Management</li>
-      <li>Discord Custom Bot Development</li>
-      <li>Minecraft Server Development</li>
-    </ul>
+    <div class="skills">
+      <div class="skill">Server Moderation</div>
+      <div class="skill">Server Management</div>
+      <div class="skill">Discord Bot Development</div>
+      <div class="skill">Minecraft Server Development</div>
+    </div>
   </section>
 
   <!-- PROJECTS -->
   <section class="section">
     <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Plugin Configuration</h3>
-      <p>Offering professional plugin setups for both premium and custom plugins to ensure optimal performance.</p>
-    </div>
-    <div class="project-card">
-      <h3>Server Setup</h3>
-      <p>End-to-end Minecraft server setup including file structure, permissions, plugin integration, and optimization.</p>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Plugin Configuration</h3>
+        <p>Customized configuration for Minecraft plugins (e.g., LuckPerms, TAB, EconomyShopGui, Itemsadder etc).</p>
+      </div>
+      <div class="project-card">
+        <h3>Ticket System</h3>
+        <p>Complete support ticket system with dropdown category selection, modals, claim features and etc.</p>
+      </div>
+      <div class="project-card">
+        <h3>Server Setup</h3>
+        <p>Complete Minecraft or Discord server setups — including performance tuning, plugin stack planning, and production-ready deployment.</p>
+      </div>
     </div>
   </section>
 
@@ -67,20 +72,20 @@
   <section class="section">
     <h2>Pricing</h2>
     <div class="pricing-box">
-      <p><strong>PRICE:</strong> CUSTOM</p>
-      <p>You decide what you pay depending on the work complexity. Let's keep it fair and flexible.</p>
-      <button onclick="openContact()">Request a Quote</button>
+      <h3>PRICE: CUSTOM</h3>
+      <p>You define your project’s scale and complexity, and I’ll provide a quote that fits.</p>
+      <button class="contact-btn" onclick="openContactModal()">Contact for Pricing</button>
     </div>
   </section>
 
   <!-- CONTACT MODAL -->
-  <div class="modal" id="contactModal">
+  <div class="modal" id="contact-modal">
     <div class="modal-content">
-      <span class="close" onclick="closeContact()">&times;</span>
-      <h2>Contact</h2>
-      <p>Reach me on:</p>
-      <p><strong>Discord:</strong> Spacaso#0001</p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/Spacaso" target="_blank">github.com/Spacaso</a></p>
+      <span class="close-btn" onclick="closeContactModal()">&times;</span>
+      <h3>Contact Spacaso</h3>
+      <p>For quotes or collaborations, reach out via:</p>
+      <p><strong>Discord:</strong> spacaso</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/spacaso" target="_blank">github.com/spacaso</a></p>
     </div>
   </div>
 
