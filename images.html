@@ -24,38 +24,21 @@
   <section class="section">
     <h2>Gallery</h2>
     <div class="gallery">
-      <img src="images-gallery/image1.png" alt="Project 1" onclick="openLightbox(this.src)">
-      <img src="images-gallery/image2.png" alt="Project 2" onclick="openLightbox(this.src)">
-      <img src="images-gallery/image3.png" alt="Project 3" onclick="openLightbox(this.src)">
+      <img src="images-gallery/image1.png" alt="Project 1">
+      <img src="images-gallery/image2.png" alt="Project 2">
+      <img src="images-gallery/image3.png" alt="Project 3">
     </div>
   </section>
 
   <!-- LIGHTBOX -->
   <div id="lightbox" class="lightbox">
-    <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
-    <img class="lightbox-content" id="lightbox-img">
+    <img id="lightbox-img" src="#" alt="Popup View">
   </div>
 
   <footer>
     <p>© 2025 Spacaso. All rights reserved.</p>
   </footer>
 
-  <script>
-    function openLightbox(src) {
-      document.getElementById("lightbox").style.display = "block";
-      document.getElementById("lightbox-img").src = src;
-    }
-
-    function closeLightbox() {
-      document.getElementById("lightbox").style.display = "none";
-    }
-
-    window.onclick = function(event) {
-      const lightbox = document.getElementById("lightbox");
-      if (event.target === lightbox) {
-        lightbox.style.display = "none";
-      }
-    }
-  </script>
+  <script src="scripts/main.js"></script>
 </body>
 </html>
