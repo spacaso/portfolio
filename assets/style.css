@@ -7,7 +7,7 @@ body {
 }
 
 .hero {
-  background: url('assets/bn-banner.png') no-repeat center center/cover;
+  background: url('assets/bg-banner.png') no-repeat center center/cover;
   text-align: center;
   padding: 80px 20px;
   color: #fff;
