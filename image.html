@@ -2,24 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spacaso | Images</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
+
   <nav class="navbar">
-    <a href="index.html" class="nav-btn">Home</a>
-    <a href="images.html" class="nav-btn">Images</a>
+    <button onclick="location.href='index.html'">Home</button>
+    <button onclick="location.href='images.html'">Images</button>
   </nav>
 
-  <section class="section">
-    <h2>My Uploaded Images</h2>
-    <div class="gallery">
-      <!-- Automatically loads all images from /uploads folder -->
-      <!-- This can't be dynamic in GitHub Pages. You must add <img> tags manually. -->
-      <img src="uploads/image1.png" alt="Image 1">
-      <img src="uploads/image2.jpg" alt="Image 2">
-      <!-- Add more as needed -->
-    </div>
-  </section>
+  <div class="section">
+    <h2>My Images</h2>
+    <div class="image-gallery" id="gallery"></div>
+  </div>
+
+  <footer>
+    <p>© 2025 Spacaso. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const gallery = document.getElementById("gallery");
+
+    const images = [
+      // You don’t need to edit this. Just upload to /images-gallery and name them img1.png, img2.jpg, etc
+      "img1.png", "img2.jpg", "img3.jpeg"
+    ];
+
+    images.forEach((img) => {
+      const imagePath = "images-gallery/" + img;
+      const imgElement = document.createElement("img");
+      imgElement.src = imagePath;
+      imgElement.classList.add("gallery-img");
+      gallery.appendChild(imgElement);
+    });
+  </script>
+
 </body>
 </html>
+
