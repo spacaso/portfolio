@@ -5,22 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Spacaso | Portfolio</title>
   <link rel="stylesheet" href="assets/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- NAV -->
-  <nav class="navbar">
-    <a href="index.html" class="nav-btn">Home</a>
-    <a href="images.html" class="nav-btn">My Work</a>
-  </nav>
-
-  <!-- HERO -->
+  <!-- HERO BANNER -->
   <div class="hero">
-    <img src="assets/bg-banner.png" alt="Banner" class="banner" />
     <h1>Spacaso</h1>
     <p class="tagline">Minecraft & Discord Bot Developer</p>
   </div>
+
+  <!-- NAVIGATION -->
+  <nav class="nav-bar">
+    <a href="index.html" class="nav-btn active">Home</a>
+    <a href="images.html" class="nav-btn">Images</a>
+  </nav>
 
   <!-- INTRO -->
   <section class="section">
@@ -55,15 +53,15 @@
     <div class="projects">
       <div class="project-card">
         <h3>Plugin Configuration</h3>
-        <p>Customized configuration for Minecraft plugins (e.g., LuckPerms, TAB, EconomyShopGui, Itemsadder etc).</p>
+        <p>Customized configuration for Minecraft plugins (e.g., LuckPerms, TAB, EconomyShopGui, Itemsadder, etc).</p>
       </div>
       <div class="project-card">
         <h3>Ticket System</h3>
-        <p>Complete support ticket system with dropdown category selection, modals, claim features and etc.</p>
+        <p>Complete support ticket system with dropdown category selection, modals, claim features, and more.</p>
       </div>
       <div class="project-card">
         <h3>Server Setup</h3>
-        <p>Complete Minecraft or Discord server setups — including performance tuning, plugin stack planning, and production-ready deployment.</p>
+        <p>Complete Minecraft or Discord server setups — performance tuning, plugin stack planning, and deployment.</p>
       </div>
     </div>
   </section>
@@ -74,20 +72,8 @@
     <div class="pricing-box">
       <h3>PRICE: CUSTOM</h3>
       <p>You define your project’s scale and complexity, and I’ll provide a quote that fits.</p>
-      <button class="contact-btn" onclick="openContactModal()">Contact for Pricing</button>
     </div>
   </section>
-
-  <!-- CONTACT MODAL -->
-  <div class="modal" id="contact-modal">
-    <div class="modal-content">
-      <span class="close-btn" onclick="closeContactModal()">&times;</span>
-      <h3>Contact Spacaso</h3>
-      <p>For quotes or collaborations, reach out via:</p>
-      <p><strong>Discord:</strong> spacaso</p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/spacaso" target="_blank">github.com/spacaso</a></p>
-    </div>
-  </div>
 
   <footer>
     <p>© 2025 Spacaso. All rights reserved.</p>
