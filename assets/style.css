@@ -1,178 +1,144 @@
-/* GENERAL */
 body {
-  margin: 0;
   font-family: 'Orbitron', sans-serif;
-  background-color: #0a0a0a;
-  color: #ffffff;
+  background-color: #0e0e1a;
+  color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* HERO SECTION */
 .hero {
-  background: url('bn-banner.png') no-repeat center center/cover;
-  padding: 100px 20px;
+  background: url('assets/bn-banner.png') no-repeat center center/cover;
   text-align: center;
+  padding: 80px 20px;
   color: #fff;
 }
 
-.hero h1 {
-  font-size: 4rem;
-  margin-bottom: 0.5rem;
-}
-
 .tagline {
-  font-size: 1.5rem;
-  color: #f5c400;
+  font-size: 1.2rem;
+  opacity: 0.8;
 }
 
-/* NAVBAR */
-.navbar {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  background-color: #111;
-  padding: 10px 0;
-}
-
-.nav-btn {
-  padding: 8px 20px;
-  border: 1px solid #f5c400;
-  border-radius: 4px;
-  color: #f5c400;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.nav-btn:hover {
-  background-color: #f5c400;
-  color: #0a0a0a;
-}
-
-/* SECTIONS */
 .section {
-  padding: 50px 20px;
-  max-width: 900px;
-  margin: auto;
+  padding: 40px 20px;
 }
 
 .section h2 {
-  color: #f5c400;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.section p {
-  font-size: 1rem;
-  line-height: 1.6;
+  color: #ffcc00;
 }
 
 .timeline li {
-  margin-bottom: 0.5rem;
+  margin: 10px 0;
 }
 
-/* SKILLS */
 .skills {
   display: flex;
+  gap: 10px;
   flex-wrap: wrap;
-  gap: 1rem;
 }
 
 .skill {
-  background-color: #1a1a1a;
-  padding: 10px 20px;
-  border: 1px solid #f5c400;
+  background-color: #1a1a2e;
+  padding: 10px 15px;
   border-radius: 5px;
 }
 
-/* PROJECTS */
 .projects {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .project-card {
-  background-color: #1a1a1a;
-  border: 1px solid #f5c400;
+  background-color: #1a1a2e;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 250px;
 }
 
-/* PRICING */
 .pricing-box {
-  background-color: #1a1a1a;
-  border: 1px solid #f5c400;
+  background-color: #1a1a2e;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 8px;
   text-align: center;
 }
 
 .contact-btn {
-  background-color: #f5c400;
+  background-color: #ffcc00;
   border: none;
-  color: #0a0a0a;
   padding: 10px 20px;
-  font-weight: bold;
-  border-radius: 5px;
   cursor: pointer;
   margin-top: 15px;
 }
 
-.contact-btn:hover {
-  background-color: #e4b700;
-}
-
-/* MODAL */
 .modal {
   display: none;
   position: fixed;
-  z-index: 1000;
+  z-index: 10;
   left: 0; top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(10,10,10,0.9);
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-content {
-  background-color: #1a1a1a;
-  margin: 10% auto;
-  padding: 20px;
-  border: 1px solid #f5c400;
-  border-radius: 5px;
-  width: 90%;
+  background: #1a1a2e;
+  padding: 30px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
   max-width: 400px;
-  color: #fff;
 }
 
 .close-btn {
   float: right;
   font-size: 1.5rem;
   cursor: pointer;
+  color: #fff;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #111;
-  color: #777;
+  background-color: #0e0e1a;
+  margin-top: 40px;
 }
 
-/* IMAGE GALLERY */
-.gallery {
+.navbar {
+  background-color: #111;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.navbar button {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.navbar button:hover {
+  background-color: #ffcc00;
+  color: black;
+}
+
+.image-gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 15px;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 20px;
 }
 
-.gallery img {
-  max-width: 300px;
-  border: 1px solid #f5c400;
-  border-radius: 5px;
+.gallery-img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 8px;
+  border: 2px solid #222;
 }
