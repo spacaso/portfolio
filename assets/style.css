@@ -1,137 +1,201 @@
 body {
   margin: 0;
   font-family: 'Orbitron', sans-serif;
-  background: url('bg-banner.png') no-repeat center top;
+  background: url('assets/bg-banner.png') no-repeat center center fixed;
   background-size: cover;
-  color: white;
-  background-color: #000;
+  color: #f5f5f5;
 }
 
+/* HERO */
 .hero {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 60px 20px;
   text-align: center;
-  padding: 60px 20px 20px;
 }
-
-h1 {
+.hero h1 {
+  font-size: 3em;
   color: yellow;
-  margin-bottom: 10px;
+}
+.hero .tagline {
+  font-size: 1.2em;
+  color: #ddd;
 }
 
-.tagline {
-  font-size: 1.1rem;
-}
-
+/* NAVIGATION */
 .nav-bar {
+  background: black;
   display: flex;
   justify-content: center;
-  background-color: #111;
+  gap: 20px;
+  padding: 12px;
 }
-
 .nav-btn {
-  color: white;
-  padding: 14px 20px;
+  color: yellow;
   text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
 }
-
-.nav-btn.active {
-  background-color: yellow;
+.nav-btn:hover, .nav-btn.active {
+  background: yellow;
   color: black;
 }
 
+/* SECTIONS */
 .section {
+  background-color: rgba(0, 0, 0, 0.75);
   padding: 40px 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+  border-radius: 12px;
 }
-
-.row {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.row h2 {
-  min-width: 180px;
+.section h2 {
+  text-align: center;
   color: yellow;
+  margin-bottom: 20px;
+}
+.section p, .section li {
+  text-align: center;
 }
 
+/* TIMELINE */
 .timeline {
   list-style: none;
   padding: 0;
 }
 
-.gallery {
+/* SKILLS */
+.skills {
   display: flex;
-  gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 15px;
+}
+.skill {
+  background: yellow;
+  color: black;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+.skill:hover {
+  transform: scale(1.1);
 }
 
-.gallery img {
+/* PROJECT CARDS */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.project-card {
+  background: #111;
+  padding: 20px;
+  border: 1px solid yellow;
+  border-radius: 10px;
   width: 300px;
-  height: auto;
-  cursor: pointer;
   transition: transform 0.3s ease;
 }
-
-.gallery img:hover {
+.project-card:hover {
   transform: scale(1.05);
 }
 
-footer {
+/* PRICING */
+.pricing-box {
+  background: #111;
+  padding: 30px;
   text-align: center;
-  padding: 20px;
-  background-color: #111;
-  color: white;
+  border: 2px solid yellow;
+  border-radius: 12px;
 }
-
 .contact-btn {
-  background-color: yellow;
-  border: none;
+  background: yellow;
+  color: black;
   padding: 10px 20px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
+  transition: transform 0.2s ease;
+}
+.contact-btn:hover {
+  transform: scale(1.1);
 }
 
-/* Modal */
+/* MODAL */
 .modal {
   display: none;
   position: fixed;
   z-index: 999;
   left: 0; top: 0;
   width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.8);
-  justify-content: center;
-  align-items: center;
+  background: rgba(0,0,0,0.8);
 }
-
 .modal-content {
   background: #222;
   color: white;
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
+  max-width: 400px;
+  margin: 10% auto;
   text-align: center;
+  border: 2px solid yellow;
 }
-
-.modal .close {
+.modal-content a {
+  color: yellow;
+}
+.close {
   position: absolute;
-  top: 20px; right: 30px;
+  top: 20px;
+  right: 40px;
   font-size: 30px;
+  color: yellow;
   cursor: pointer;
-  color: white;
 }
 
-/* Lightbox */
+/* GALLERY */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.gallery img {
+  width: 300px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* LIGHTBOX */
 .lightbox {
   display: none;
   position: fixed;
+  z-index: 999;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.9);
   justify-content: center;
   align-items: center;
-  z-index: 1000;
 }
-
 .lightbox img {
   max-width: 90%;
   max-height: 90%;
+  border: 4px solid yellow;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background: black;
+  color: yellow;
+  padding: 15px;
+  margin-top: 40px;
 }
