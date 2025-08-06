@@ -3,28 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Spacaso | Gallery</title>
+  <title>Spacaso | My Work</title>
   <link rel="stylesheet" href="assets/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- NAVIGATION -->
-  <nav class="navbar">
-    <button onclick="location.href='index.html'">Home</button>
-    <button onclick="location.href='images.html'">Images</button>
-  </nav>
-
-  <!-- HERO (SAME AS INDEX) -->
+  <!-- HERO BANNER -->
   <div class="hero">
-    <h1>Gallery</h1>
-    <p class="tagline">Preview of My Work</p>
+    <h1>My Work</h1>
+    <p class="tagline">Gallery of Minecraft & Discord Creations</p>
   </div>
 
-  <!-- GALLERY SECTION -->
+  <!-- NAVIGATION -->
+  <nav class="nav-bar">
+    <a href="index.html" class="nav-btn">Home</a>
+    <a href="images.html" class="nav-btn active">Images</a>
+  </nav>
+
+  <!-- IMAGE GALLERY -->
   <section class="section">
-    <h2>Image Gallery</h2>
-    <div class="gallery" id="image-gallery">
-      <!-- JS will auto-populate images from images-gallery/ -->
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <!-- Add more images as needed -->
+      <img src="images-gallery/image1.png" alt="Project 1">
+      <img src="images-gallery/image2.jpg" alt="Project 2">
+      <img src="images-gallery/image3.png" alt="Project 3">
     </div>
   </section>
 
@@ -32,6 +35,6 @@
     <p>© 2025 Spacaso. All rights reserved.</p>
   </footer>
 
-  <script src="scripts/images.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 </html>
