@@ -1,10 +1,18 @@
-function showContact() {
-  document.getElementById('contact-popup').classList.remove('hidden');
+function openModal() {
+  document.getElementById('contactModal').style.display = 'block';
 }
 
-function hideContact() {
-  document.getElementById('contact-popup').classList.add('hidden');
+function closeModal() {
+  document.getElementById('contactModal').style.display = 'none';
 }
+
+window.onclick = function(event) {
+  const modal = document.getElementById('contactModal');
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+};
+
 
 
 
