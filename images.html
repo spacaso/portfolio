@@ -1,42 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Spacaso | Gallery</title>
-  <link rel="stylesheet" href="assets/style.css" />
+  <meta charset="UTF-8">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <!-- HERO -->
-  <div class="hero">
-    <h1>Gallery</h1>
-    <p class="tagline">My Projects in Minecraft & Discord</p>
-  </div>
 
-  <!-- NAVIGATION -->
   <nav class="nav-bar">
     <a href="index.html" class="nav-btn">Home</a>
     <a href="images.html" class="nav-btn active">Images</a>
   </nav>
 
-  <!-- GALLERY -->
   <section class="section">
     <h2>Gallery</h2>
     <div class="gallery">
-      <img src="images-gallery/image1.png" alt="Image 1">
-      <img src="images-gallery/image2.png" alt="Image 2">
-      <img src="images-gallery/image3.png" alt="Image 3">
+      <img src="assets/img1.png" alt="Image 1" onclick="openImage(this)">
+      <img src="assets/img2.png" alt="Image 2" onclick="openImage(this)">
+      <img src="assets/img3.png" alt="Image 3" onclick="openImage(this)">
     </div>
   </section>
 
-  <!-- LIGHTBOX -->
-  <div id="lightbox" class="lightbox">
-    <img id="lightbox-img" src="#" alt="Full Image View" />
+  <!-- FULL IMAGE OVERLAY -->
+  <div id="imageModal" class="image-modal" onclick="closeImage()">
+    <span class="close-img">&times;</span>
+    <img id="modalImage" class="modal-content" />
   </div>
-
-  <footer>
-    <p>© 2025 Spacaso. All rights reserved.</p>
-  </footer>
 
   <script src="scripts/main.js"></script>
 </body>
