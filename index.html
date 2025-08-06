@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- HERO BANNER -->
+  <!-- HERO -->
   <div class="hero">
     <h1>Spacaso</h1>
     <p class="tagline">Minecraft & Discord Bot Developer</p>
@@ -21,67 +21,35 @@
   </nav>
 
   <!-- INTRO -->
-  <section class="section">
+  <section class="section row">
     <h2>Introduction</h2>
-    <p>I’m Spacaso — a Minecraft and Discord-focused developer known for futuristic digital builds and real-time interactive tools. I specialize in server-side infrastructure, automation bots, and immersive backend management.</p>
+    <p>I’m Spacaso — a Minecraft and Discord-focused developer known for futuristic digital builds and real-time interactive tools.</p>
   </section>
 
   <!-- EXPERIENCE -->
-  <section class="section">
+  <section class="section row">
     <h2>Experience</h2>
     <ul class="timeline">
       <li><strong>2025 – Present:</strong> Custom Discord Bot Developer</li>
       <li><strong>2021 – Present:</strong> Minecraft Server Manager & Developer</li>
-      <li><strong>2021 – 2022:</strong> Community Moderator for multiple gaming networks</li>
     </ul>
   </section>
 
-  <!-- SKILLS -->
-  <section class="section">
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="skill">Server Moderation</div>
-      <div class="skill">Server Management</div>
-      <div class="skill">Discord Bot Development</div>
-      <div class="skill">Minecraft Server Development</div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section class="section">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="project-card">
-        <h3>Plugin Configuration</h3>
-        <p>Customized configuration for Minecraft plugins (e.g., LuckPerms, TAB, EconomyShopGui, Itemsadder, etc).</p>
-      </div>
-      <div class="project-card">
-        <h3>Ticket System</h3>
-        <p>Complete support ticket system with dropdown category selection, modals, claim features, and more.</p>
-      </div>
-      <div class="project-card">
-        <h3>Server Setup</h3>
-        <p>Complete Minecraft or Discord server setups — performance tuning, plugin stack planning, and deployment.</p>
-      </div>
-    </div>
-  </section>
-
   <!-- PRICING -->
-  <section class="section">
+  <section class="section row">
     <h2>Pricing</h2>
     <div class="pricing-box">
-      <h3>PRICE: CUSTOM</h3>
-      <p>You define your project’s scale and complexity, and I’ll provide a quote that fits.</p>
-      <button class="contact-btn" onclick="openContactModal()">Contact</button>
+      <p>Custom pricing based on scope and complexity.</p>
+      <button class="contact-btn" onclick="openContact()">Contact</button>
     </div>
   </section>
 
-  <!-- CONTACT MODAL -->
-  <div id="contactModal" class="modal">
+  <!-- CONTACT POPUP -->
+  <div id="contact-modal" class="modal">
     <div class="modal-content">
-      <span class="close" onclick="closeContactModal()">&times;</span>
+      <span class="close" onclick="closeContact()">&times;</span>
       <h3>Contact Spacaso</h3>
-      <p>Discord: <strong>spacaso</strong></p>
+      <p>Discord: spacaso</p>
       <p>GitHub: <a href="https://github.com/spacaso" target="_blank">github.com/spacaso</a></p>
     </div>
   </div>
