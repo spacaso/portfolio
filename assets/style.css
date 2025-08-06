@@ -1,166 +1,160 @@
-/* GENERAL */
-body {
+/* Reset + Base Styles */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Orbitron', sans-serif;
+  background-color: #0e0e0e;
   color: white;
-  background-image: url('../images/bg-banner.png');
+  background-image: url('bg-banner.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  line-height: 1.6;
 }
 
-h1, h2, h3 {
-  color: #ffdd00;
-  margin-bottom: 10px;
-}
-
-p, li {
-  color: white;
-}
-
-/* HERO BANNER */
+/* Hero Banner */
 .hero {
   text-align: center;
-  padding: 100px 20px 40px;
-  background: rgba(0, 0, 0, 0.7);
+  padding: 4rem 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: #f7e600;
 }
 
 .tagline {
-  font-size: 1.2rem;
-  color: #ffdd00;
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  color: #ddd;
 }
 
-/* NAVIGATION */
+/* Nav Bar */
 .nav-bar {
   display: flex;
   justify-content: center;
-  background-color: #111;
-  padding: 10px 0;
+  background: #1a1a1a;
+  padding: 0.8rem 0;
+  gap: 2rem;
 }
 
 .nav-btn {
-  color: white;
-  padding: 10px 20px;
   text-decoration: none;
-  transition: 0.3s;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  transition: 0.3s ease;
 }
 
-.nav-btn.active,
-.nav-btn:hover {
-  background-color: #ffdd00;
+.nav-btn:hover,
+.nav-btn.active {
+  background-color: #f7e600;
   color: black;
 }
 
-/* SECTIONS */
+/* Sections */
 .section {
-  padding: 50px 20px;
+  padding: 3rem 1rem;
   max-width: 1000px;
   margin: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 2rem;
+  border-radius: 8px;
   transition: transform 0.3s ease;
 }
 
 .section:hover {
-  transform: scale(1.01);
+  transform: scale(1.02);
 }
 
-/* TIMELINE */
+.section h2 {
+  color: #f7e600;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Timeline */
 .timeline {
-  list-style-type: none;
-  padding: 0;
+  list-style: none;
+  padding-left: 1rem;
 }
 
 .timeline li {
-  margin-bottom: 10px;
+  margin-bottom: 0.7rem;
 }
 
-/* SKILLS */
+/* Skills */
 .skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 0.8rem;
 }
 
 .skill {
-  background: rgba(255, 221, 0, 0.1);
-  border: 1px solid #ffdd00;
-  padding: 10px 15px;
-  border-radius: 8px;
+  background: #f7e600;
+  color: black;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
 }
 
-/* PROJECTS */
+/* Projects */
 .projects {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1rem;
 }
 
 .project-card {
+  background: #1e1e1e;
+  padding: 1rem;
+  border-radius: 6px;
   flex: 1 1 300px;
-  background: rgba(0,0,0,0.5);
-  border: 1px solid #ffdd00;
-  padding: 20px;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
 }
 
-.project-card:hover {
-  transform: scale(1.03);
-}
-
-/* PRICING */
+/* Pricing */
 .pricing-box {
+  background: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 6px;
   text-align: center;
-  background: rgba(0, 0, 0, 0.6);
-  border: 1px solid #ffdd00;
-  padding: 30px;
-  border-radius: 12px;
 }
 
-/* GALLERY */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
+.pricing-box h3 {
+  color: #f7e600;
+  margin-bottom: 1rem;
 }
 
-.gallery img {
-  max-width: 300px;
-  border: 2px solid #ffdd00;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
+.pricing-box p {
+  color: #ddd;
+  margin-bottom: 1.5rem;
+}
+
+.pricing-box .contact-btn {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  background-color: #f7e600;
+  color: black;
+  font-weight: bold;
+  border-radius: 4px;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-.gallery img:hover {
-  transform: scale(1.1);
+.pricing-box .contact-btn:hover {
+  background-color: #e6d400;
 }
 
-/* LIGHTBOX */
-.lightbox {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.9);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-}
-
-.lightbox img {
-  max-width: 90%;
-  max-height: 90%;
-}
-
-/* FOOTER */
+/* Footer */
 footer {
   text-align: center;
-  padding: 20px 0;
-  background: #111;
+  padding: 1rem 0;
+  background: rgba(0, 0, 0, 0.8);
   color: #aaa;
-  font-size: 0.9rem;
 }
